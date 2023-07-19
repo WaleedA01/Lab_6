@@ -1,5 +1,5 @@
 # Lab 6 Waleed Aref    
-def password_encoder(password):  # you'll want to change this to encode()  -Mary
+def encode(password):  # you'll want to change this to encode()  -Mary
     encoded_password = ""
     for digit in password:
         encoded_digit = str((int(digit) + 3) % 10)
@@ -32,7 +32,7 @@ def main():
     while option != "3":
         if option == "1":
             password = input("Please enter your password to encode: ")
-            encoded_password = password_encoder(password)
+            encoded_password = encode(password)
             print("Your password has been encoded and stored!")
         elif option == "2":  # decode the encoded password
             print(f'The encoded password is {encoded_password}, and the original password is {decode(encoded_password)}.')
