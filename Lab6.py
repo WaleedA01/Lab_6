@@ -1,3 +1,4 @@
+# Lab 6 Waleed Aref    
 def password_encoder(password):
     encoded_password = ""
     for digit in password:
@@ -5,12 +6,7 @@ def password_encoder(password):
         encoded_password += encoded_digit
     return encoded_password
 
-def password_decoder(encoded_password):
-    decoded_password = ""
-    for digit in encoded_password:
-        decoded_digit = str((int(digit) - 3) % 10)
-        decoded_password += decoded_digit
-    return decoded_password
+#decode function here
 
 def main():
     encoded_password = None
