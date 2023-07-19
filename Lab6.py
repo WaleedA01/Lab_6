@@ -25,10 +25,8 @@ def main():
             encoded_password = password_encoder(password)
             print("Your password has been encoded and stored!")
         elif option == "2":
-            if encoded_password is not None:
-                print("The encoded password is", encoded_password, "and the original password is", password_decoder(encoded_password))
-            else:
-                print("No password has been encoded yet!")
+            pass
+            # implement decode function here
         else:
             print("Invalid option!")
 
